@@ -2,7 +2,7 @@
 
 * Студент: [Денис Черемискин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2558467).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-
+* Сайт: [Мой проект: Седона](https://denischeremiskin.github.io/2558467-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
