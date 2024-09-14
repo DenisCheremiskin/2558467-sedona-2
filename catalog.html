@@ -10,17 +10,18 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-link" href="index.html">
-          <img class="page-header-logo" src="img/header/header-logo.jpg" width="140" height="70" alt="Логотип Седона" />
+          <img class="page-header-logo" src="images/header/header-logo.svg" width="140" height="70"
+            alt="Логотип Седона" />
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -32,13 +33,12 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Понравивщиеся</span>
+              <span class="notification-badge">12</span>
             </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу туда</a>
           </li>
         </ul>
       </nav>
+      <a class="navigation-link" href="#">Хочу сюда</a>
     </header>
     <main class="main-catalog">
       <header class="header-filter">
@@ -104,7 +104,6 @@
             <label for="catalog-filter-befor">До</label>
             <input class="catalog-price" type="number" name="price" value="9999" id="catalog-filter-befor" />
             <input class="catalog-range" type="range" name="value" min="0" max="100" value="80" />
-            </div>
           </fieldset>
           <input class="catalog-button-submit" type="submit" value="Применить" />
           <input class="catalog-button-reset" type="reset" value="Сбросить" />
@@ -114,23 +113,31 @@
         <h2 class="catalog-search">Найдено гостиниц:
           <span class="quantity">38</span>
         </h2>
-        <select name="select-control">
+        <select name="select-control" aria-label="Сортировка">
           <option value="chep">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button-view-tile" href="#">
-          <span class="visually-hidden">Вид плитка</span>
-        </a>
-        <a class="button-view-one" href="#">
-          <span class="visually-hidden">Вид по одному</span>
-        </a>
-        <a class="button-view-list" href="#">
-          <span class="visually-hidden">Вид списком</span>
-        </a>
+        <ul class="view-buttons">
+          <li class="view-button-item">
+            <a class="view-button-tile" href="#">
+              <span class="visually-hidden">Вид плитка</span>
+            </a>
+          </li>
+          <li class="view-button-item">
+            <a class="button-view-one" href="#">
+              <span class="visually-hidden">Вид по одному</span>
+            </a>
+          </li>
+          <li class="view-button-item">
+            <a class="button-view-list" href="#">
+              <span class="visually-hidden">Вид списком</span>
+            </a>
+          </li>
+        </ul>
         <ul class="hotel-list">
           <li class="hotel-item">
             <a class="hotel-item-link" href="#">
-              <img src="#" alt="Гостиница Amara Resort & Spa">
+              <img src="images/catalog-hotel/hotel-1.jpg" width="300" height="212" alt="Вид из гостиницы на небо, через ущелье">
             </a>
             <a class="hotel-item-name-link" href="#">
               <h3 class="hotel-item-name">Amara Resort & Spa</h3>
@@ -148,7 +155,7 @@
           </li>
           <li class="hotel-item">
             <a class="hotel-item-link" href="#">
-              <img src="#" alt="Гостиница Villas at Poco Diablo">
+              <img src="images/catalog-hotel/hotel-2.jpg" width="300" height="212" alt="Вид из гостиницы на лучистые горы и радужное небо после дождя">
             </a>
             <a class="hotel-item-name-link" href="#">
               <h3 class="hotel-item-name">Villas at Poco Diablo</h3>
@@ -156,7 +163,7 @@
             <p class="hotel-item-type">Гостиница</p>
             <span class="hotel-item-price">От 5000 ₽</span>
             <a class="hotel-item-link-details" href="#">Подробнее</a>
-            <button class="hotel-item-button-favorites-like">В избранном</button>
+            <button class="hotel-item-button-favorites item-like">В избранном</button>
             <div class="hotel-item-stars-rating">
               <span class="visually-hidden">Количество звёзд рейтинга</span>
             </div>
@@ -166,7 +173,7 @@
           </li>
           <li class="hotel-item">
             <a class="hotel-item-link" href="#">
-              <img src="#" alt="Гостиница Desert Quail Inn">
+              <img src="images/catalog-hotel/hotel-3.jpg" width="300" height="212" alt="Вид из гостинницы на скалистые горы при дневном свете">
             </a>
             <a class="hotel-item-name-link" href="#">
               <h3 class="hotel-item-name">Desert Quail Inn</h3>
@@ -184,7 +191,7 @@
           </li>
           <li class="hotel-item">
             <a class="hotel-item-link" href="#">
-              <img src="#" alt="Гостиница GreenTree Inn">
+              <img src="images/catalog-hotel/hotel-4.jpg" width="300" height="212" alt="Вид из гостинницы на горы в ночном, звёздном небе">
             </a>
             <a class="hotel-item-name-link" href="#">
               <h3 class="hotel-item-name">GreenTree Inn</h3>
@@ -220,7 +227,7 @@
         </ul>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="page-footer">
       <section class="subscribe">
         <h2 class="subscribe-slogan">Подпишитесь на рассылку</h2>
         <p class="subscribe-lead">Только полезная информация и никакого спама, честное бойскаутское!</p>
