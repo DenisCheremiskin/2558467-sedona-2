@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+.main-logo {
+  background-image: url("../images/header/Vector.svg"), url("../images/header/fon-sedona.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: center, bottom;
+  color: #fafafa;
+  background-color: #333333;
+  background-repeat: no-repeat;
+}
+.navigation {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.navigation-botton-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #756157;
+}
+.advantages-slogan {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+.advantages-lead {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.advantages-list {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  background-color: #83b3d31f;
+}
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+.advantages-item-dark {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+.advantages-description-dark {
+  color: #ffffff;
+}
+.advantages-item-light {
+  background-color: #83b3d333;
+}
+
+.service-slogan {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+.service-lead {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+.service-list {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  background-color: #83b3d31f;
+}
+.service-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.service-item-light {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+}
+.search-slogan {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+.search-lead {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.search-hotel {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #756157;
+}
+.main-footer {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #756157;
+}
+.subscribe {
+  background-image: url("../images/footer/subscribe-fon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #756157;
+}
+.subscribe-lead {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.subscribe-field {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-align: left;
+  background-color: #f2f2f2;
+  font-family: inherit;
+}
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #82b3d3;
+  font-family: inherit;
+}
+.feedback-list {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+}
+.catalog-fon {
+  background-image: url("../images/footer/filter-fon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #756157;
+}
+.header-filter-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.catalog-filter-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.catalog-filter-list {
+  line-height: 23px;
+  color: #ffffff;
+}
+.catalog-price {
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  background-color: #f2f2f2;
+  font-family: inherit;
+}
+.catalog-button-submit {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #82b3d3;
+  font-family: inherit;
+}
+.catalog-button-reset {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #82b3d3;
+  font-family: inherit;
+}
+.catalog-search {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+}
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-align: left;
+  background-color: #e5e5e5;
+  font-family: inherit;
+}
+.hotel-item-name {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+}
+.hotel-item-link-details {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #756157;
+}
+.hotel-item-button-favorites {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #82B3D3;
+}
+.item-like {
+  background-color: #7db54f;
+}
+.hotel-item-rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.pagination {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+}
+.pagination-item-link {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+.pagination-item-glass {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+.catalog-hotel {
+  background-color: #ffffff;
+}
+.subscribe-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+}
+.subscribe-catalog-lead {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  background-color: #ffffff;
+}
