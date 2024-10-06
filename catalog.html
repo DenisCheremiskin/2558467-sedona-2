@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <div class="container main-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-link" href="index.html">
@@ -26,20 +27,22 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-search">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-like">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Понравивщиеся</span>
               <span class="notification-badge">12</span>
             </a>
           </li>
+          <li class="navigation-item navigation-botton">
+            <a class="navigation-link navigation-botton-link" href="#">Хочу сюда</a>
+          </li>
         </ul>
       </nav>
-      <a class="navigation-link navigation-botton-link" href="#">Хочу сюда</a>
     </header>
     <main class="main-catalog">
       <div class="catalog-fon">
@@ -234,15 +237,18 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="main-footer">
       <section class="subscribe-catalog">
-        <h2 class="subscribe-slogan">Подпишитесь на рассылку</h2>
-        <p class="subscribe-catalog-lead">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <div class="subscribe-fon">
+        <h2 class="subscribe-slogan search-slogan-catalog">Подпишитесь на рассылку</h2>
+        <p class="subscribe-lead">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe-field" type="email" name="subscribe-email" placeholder="Ваш email" />
+          <label for="subscribe-email" class="visually-hidden">Укажите ваш Email</label>>
+            <input class="subscribe-field" type="email" name="subscribe-email" placeholder="Ваш email" />
           <button class="subscribe-button" type="submit">Подписаться
           </button>
         </form>
+        </div>
       </section>
       <section class="feedback-list">
         <h2 class="visually-hidden">Контакты</h2>
@@ -270,6 +276,7 @@
         </a>
       </section>
     </footer>
+  </div>
   </body>
 
 </html>
