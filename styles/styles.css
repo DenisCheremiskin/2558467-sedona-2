@@ -94,12 +94,14 @@ body {
   background-repeat: no-repeat;
   margin: 0;
 }
+
 .navigation-link-like {
   display: block;
   background-image: url("../images/icon/icons_like.svg");
   background-repeat: no-repeat;
   margin: 0;
 }
+
 .navigation-botton-link {
   background-color: #756157;
   color: #ffffff;
@@ -195,6 +197,7 @@ body {
   text-transform: uppercase;
   margin: 0 0 60px 0;
 }
+
 .advantages-title::before {
   content: " ";
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -362,10 +365,20 @@ body {
 
 .breadcrumbs {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-form {
   display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
+.catalog-filter-group-cost {
+  display: grid;
+  grid-template-columns: 288px 191px
 }
 
 .catalog-filter-group {
@@ -387,6 +400,7 @@ body {
   font-weight: 700;
   margin: 0;
   text-align: left;
+  padding: 0;
 }
 
 .catalog-hotel {
@@ -413,54 +427,60 @@ body {
 
 .hotel-item {
   display: grid;
-  grid-template-columns: repeat(2, 150px);
+  grid-template-columns: repeat(2, 140px);
   box-shadow: 0 0 0 1px rgb(230, 230, 230);
   border-radius: 4px;
   padding: 20px;
+  gap: 16px 20px;
+  background-color: #ffffff;
 }
 
 .hotel-item-link {
   grid-column: span 2;
-
+  display: block;
 }
 
 .hotel-item-name-link {
   grid-column: span 2;
-  margin: 0;
   margin-right: auto;
 }
 
 .hotel-item-name {
-  margin: 16px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+  color: #000000;
 }
 
 .hotel-item-type {
-  margin: 0 0 16px 0;
   margin-right: auto;
+  margin: 0;
 }
 
 .hotel-item-price {
-  margin: 0 0 16px 0;
   margin-left: auto;
 }
 
-hotel-item-link-details {
-  margin: 0 10px 16px 0;
+
+.hotel-item-link-details {
   margin-right: auto;
   background-color: #756157;
-  padding: 8px 26px;
   border-radius: 4px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  min-width: 140px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
 }
-hotel-item-button-favorites {
-  margin: 0 0 16px 10px;
+
+.hotel-item-button-favorites {
   margin-right: 0;
   background-color: #82b3d3;
-  padding: 8px 20px;
   border-radius: 4px;
   color: #ffffff;
   text-transform: uppercase;
@@ -468,18 +488,21 @@ hotel-item-button-favorites {
   font-size: 16px;
   line-height: 20px;
   border: 0;
+  min-width: 140px;
+  padding: 8px 5px;
 }
 
 .hotel-item-stars-rating {
-  margin: 0 0 16px 0;
   margin-right: auto;
 }
-item-like {
+
+.item-like {
   background-color: #7db54f;
 }
+
 .hotel-item-rating {
-  margin: 0;
   margin-left: auto;
+  margin: 0;
 }
 
 .catalog-hotel-header {
